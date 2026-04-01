@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | ErgoLearn</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+
+  <body>
+
+    <header>
+
+      <h1>ErgoLearn</h1>
+
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="ergonomics.html">Ergonomics</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </header>
+
+    <section class="hero contact-hero">
+      <div class="hero-content">
+
+        <h2>Get in Touch with ErgoLearn</h2>
+
+        <p>
+          Have questions, suggestions, or want to collaborate? Contact us and
+          let's improve the learning environment together!
+        </p>
+
+        <button class="btn" onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })">
+          Contact Us 📬
+        </button>
+
+      </div>
+    </section>
+
+    <section class="section" id="contact-form">
+      <h3>✉️ Contact Form</h3>
+      <div class="cards glass-cards">
+
+        <form class="card" action="#" method="POST">
+
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject of your message"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Your message here..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact-info">
+      <h3>📍 Contact Information</h3>
+      <div class="cards glass-cards">
+
+        <div class="card">
+          <i class="fas fa-envelope fa-2x" style="color: #38bdf8"></i>
+          <h4>Email</h4>
+          <p>support@ergolearn.com</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-phone fa-2x" style="color: #f59e0b"></i>
+          <h4>Phone</h4>
+          <p>+63 123 247 6783</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-map-marker-alt fa-2x" style="color: #9333ea"></i>
+          <h4>Location</h4>
+          <p>Singdangan, Zamboanga Del Norte</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-globe fa-2x" style="color: #38bdf8"></i>
+          <h4>Follow Us</h4>
+
+          <p>
+            <a href="#" style="color: #38bdf8"
+              ><i class="fab fa-facebook-square"></i> Facebook</a
+            ><br />
+            <a href="#" style="color: #f59e0b"
+              ><i class="fab fa-twitter-square"></i> Twitter</a
+            ><br />
+            <a href="#" style="color: #9333ea"
+              ><i class="fab fa-instagram-square"></i> Instagram</a
+            >
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 ErgoLearn | Built for Better Learning 🎓</p>
+    </footer>
+
+  </body>
+
+</html>
